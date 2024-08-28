@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Página Principal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/script.js" defer></script>
+
+    
+</head>
+<body>
+    
+    <header class="header">
+        
+    </header>
+
+    <main class="container">
+        <section class="content">
+            <div class="content-form">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/Frame 6.png" alt="Logo" class="logo"></a>
+                </div>
+                <div class="form">
+                    <textarea id="texto-entrada" placeholder="Ingrese el texto aquí"></textarea>
+                    <p class="note">
+                        <img src="assets/Group.png" alt="Icono" class="icon"> 
+                        Solo letras minúsculas y sin acentos
+                    </p>
+                </div>
+               
+                <div class="buttons">
+                    <button class="btn encriptar" id="btn-encriptar">Encriptar</button>
+                    <button class="btn desencriptar" id="btn-desencriptar">Desencriptar</button>
+                </div>
+            </div>
+            
+            <div class="content-message">
+                <img id="img-muneco" src="assets/Muñeco.png" alt="Ningún mensaje encontrado" class="output-img">
+               <div class="cm-message">
+                    <div class="texto-encriptado" id="texto-encriptado"></div>
+                    <button class="btn-copiar" id="btn-copiar">Copiar</button>
+                    
+                    <div class="cm-title" >
+                        <p>Ningún mensaje fue encontrado</p>
+                    </div>
+                    <div class="cm-description">
+                        <p>Ingrese el texto que desees ecriptar o desencriptar</p>
+                    </div>
+               </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <p>Desarrollado por Elvis Santos®. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

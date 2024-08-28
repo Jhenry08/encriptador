@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-fondo: #f4f7fc;
+    --color-primario: #003b72;
+    --color-secundario: #d4d2d2;
+    --color-borde: #d1d1d1;
+    --color-nota: #f60000;
+}
+
+body {
+    background: linear-gradient(rgba(5,7,12,0.70),rgba(5, 7, 12, 0.50)), url(./assets/fondo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: first baseline;
+}
+
+.logo {
+    width: 120px;
+    height: 48px;
+    
+}
+
+.container {
+    /*flex: 1;*/
+    /*display: flex;*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    max-width: 1440px;
+    width: 100%;
+ 
+   
+    display: flex;/* INcializar el flex*/
+    flex-direction: row;
+    border-radius: 10px;
+    /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
+    margin: 0 auto;
+    padding: 40px;
+ 
+
+}
+.texto {
+    color: #2d10d4;
+}
+
+.form > textarea {
+
+     /* Eliminar estilos por defecto */
+     padding: none;
+     background: none;
+     margin-top: 80px;
+     border: none;
+     outline: none;
+     background: none;
+     box-shadow: none;
+     resize: none; /* Evita que el usuario redimensione el textarea */
+     
+     /* Aplicar estilos personalizados */
+     
+     font-weight: 400;
+    
+     line-height: 48px; /* Fuente personalizada */
+     font-size: 32px; /* Tamaño de fuente */
+     width: 90%; /* Ancho completo del contenedor padre */
+     height: 500px; /* Altura específica */
+     color: #ffffff;
+
+     display: flex;
+     justify-content: center; /* Centra el texto horizontalmente */
+     align-items: center; /* Centra los textos verticalmente */
+     text-align: center; /* Centra el texto dentro de las líneas */
+    
+}
+
+#texto-entrada::placeholder{
+    color: #0004ff;
+}
+
+
+.note {
+    display: flex;
+    justify-content: center;
+    color: var(--color-nota);
+    border-collapse:#ffffff;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;width: 250;
+
+
+}
+
+.btn {
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.btn-copiar {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: auto;
+    width: 250px;
+    
+   
+}
+.btn-copiar:hover{
+    background-color: rgb(137, 191, 253);
+    color: rgb(231, 38, 3);
+}
+
+.encriptar {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    width: 250px;
+}
+
+.desencriptar {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid;
+    width: 250px;
+}
+
+.texto-encriptado{
+    color: #0A3871;/* Color del texto */
+     font-weight: 400;
+     line-height: 48px; /* Fuente personalizada */
+     font-size: 24px; /* Tamaño de fuente */
+     width: 90%; /* Ancho completo del contenedor padre */
+     height: 100px; 
+     font-family: "Inter", sans-serif;
+}
+/*.content-form, .content-message {
+    display: flex;
+    flex-direction: row;
+   
+    
+}*/
+.content-form, .content-message {
+    flex: 1;
+}
+.content-form {
+    width: 70%;
+    font-size: 24px;
+}
+
+.content-message{
+    max-width: 400px;
+    width: 100%;
+    height: 944px;
+
+
+    display: flex;
+    flex-direction: column;
+    /*background-color: var(--color-secundario);*/
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 30%; 
+   /*display: flex;*/
+    /*flex-direction: column;*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content-message img {
+    margin-top: 243px;
+    width: 336px;
+    height: 304px;
+    height: auto;
+    border: 1px dotted red;
+}
+.cm-message {
+    width: 336px;
+    height: 122px;
+}
+.cm-title, .cm-description {
+    height: 50%;
+    border: 1px dotted red;
+}
+
+.cm-title > p {
+    font-weight: 700;
+    size: 24px;
+    line-height: 28.8px ;
+    text-align: center;
+    color : #343A40;
+}
+
+.com-description {
+    font-weight: 400;
+    size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #495057
+}
+
+
+
+.output-img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.copy {
+    background-color: transparent;
+    color: var(--color-primario);
+    border: 2px solid var(--color-primario);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--color-secundario);
+}
+
+.hidden {
+    display: none;
+}
+
+.footer{
+    background-color: var(--color-primario);
+    color: floralwhite;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Dispositivos pequeños (Móviles en modo retrato) */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-form {
+        width: 100%;
+    }
+
+    .content-message {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .form > textarea {
+        font-size: 20px;
+        height: 300px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+/* Dispositivos medianos (Tabletas en modo retrato y móviles en modo paisaje) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-form {
+        width: 100%;
+    }
+
+    .content-message {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .form > textarea {
+        font-size: 24px;
+        height: 350px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+/* Dispositivos grandes (Tabletas en modo paisaje y laptops pequeñas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 40px;
+    }
+
+    .content {
+        padding: 40px;
+    }
+
+    .content-form {
+        width: 65%;
+    }
+
+    .content-message {
+        width: 35%;
+        margin-top: 0;
+    }
+
+    .form > textarea {
+        font-size: 28px;
+        height: 400px;
+    }
+
+    .btn {
+        width: 200px;
+    }
+}
+
+/* Dispositivos extra grandes (Laptops y pantallas grandes) */
+@media (min-width: 1200px) {
+    .container {
+        padding: 50px;
+    }
+
+    .content {
+        padding: 50px;
+    }
+
+    .content-form {
+        width: 70%;
+    }
+
+    .content-message {
+        width: 30%;
+    }
+
+    .form > textarea {
+        font-size: 32px;
+        height: 500px;
+    }
+
+    .btn {
+        width: 250px;
+    }
+}
